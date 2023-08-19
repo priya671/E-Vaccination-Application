@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateRegisteredUserData"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/upusername1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter username of the record to be updated"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/image1"/>
+
+    <EditText
+        android:id="@+id/uppassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/upusername1"/>
+
+    <Button
+        android:id="@+id/btnupdateuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update User Record"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/uppassword1"/>
+
+    <Button
+        android:id="@+id/btnupdateadminuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Admin Record"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnupdateuser"/>
+
+</RelativeLayout>

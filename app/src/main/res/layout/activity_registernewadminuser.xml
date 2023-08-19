@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".registernewadminuser">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="376dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/adminusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/image1"/>
+
+    <EditText
+        android:id="@+id/adminpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/username"/>
+
+    <EditText
+        android:id="@+id/adminrepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="retype password"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/password"/>
+
+    <Button
+        android:id="@+id/btnadminregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register New Admin User"
+        android:layout_below="@id/repassword"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

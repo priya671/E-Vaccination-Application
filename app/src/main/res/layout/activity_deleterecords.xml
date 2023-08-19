@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleterecords"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter username of the record to be deleted"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/image1"/>
+
+    <Button
+        android:id="@+id/btndeleteuserrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User Record"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edtusername"/>
+
+    <Button
+        android:id="@+id/btndeleteadminrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Admin Record"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btndeleteuserrecord"/>
+</RelativeLayout>
